@@ -45,7 +45,7 @@ header {
 
 }
 
-ul {
+ul.navigationBar {
 
     list-style-type: none;
     height: 3em;
