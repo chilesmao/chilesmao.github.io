@@ -280,6 +280,53 @@ footer {
     margin: 0px;
 }
 
+/*Sponsor page CSS*/
+
+.containerSponsor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    gap: 8px 15px;
+}
+
+.imageFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsorImages {
+    width: 100%;
+}
+
+.imageFlex:hover img {
+    animation-name: expand;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.sponsorBar {
+    animation-name: shrink;
+    animation-duration: .5s;
+    background: linear-gradient(45deg, rgba(255, 130, 255, 0.75), rgba(160, 120, 255, 0.75), rgba(130, 255, 245, 0.75));
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.12);
+    margin: 0% auto;
+    margin-top: 5%;
+    margin-bottom: 100PX;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+@media (max-width: 1300px) {
+    .containerSponsor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 85%;
+    }
+}
+
+
 
 /*This is for mid width, the cards will attatch to the sides.*/
 @media (min-width: 600px) and (max-width: 1400px) and (max-height:1400px) {
